@@ -1,5 +1,10 @@
-require "funbox_test/version"
+require_relative 'funbox_test/version'
+require_relative 'funbox_test/reader'
+require_relative 'funbox_test/numbers'
 
-module FunboxTest
-  # Your code goes here...
-end
+#module FunboxTest
+  #def self.nmax(n)
+    text = FunboxTest::Reader.text
+    puts FunboxTest::Numbers.parse_numbers text
+  #end
+#end
