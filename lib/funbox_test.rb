@@ -1,7 +1,5 @@
 require_relative 'funbox_test/version'
-require_relative 'funbox_test/reader'
 require_relative 'funbox_test/numbers'
-require 'pry'
 
 module FunboxTest
   def self.nmax(stdin, n)
