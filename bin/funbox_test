@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'funbox_test'
+
+puts FunboxTest.nmax $stdin, ARGV[0]
