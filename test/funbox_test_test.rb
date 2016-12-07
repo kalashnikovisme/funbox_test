@@ -5,7 +5,7 @@ class FunboxTestTest < Minitest::Test
     refute_nil ::FunboxTest::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_nmax
+    assert_equal ::FunboxTest.nmax(6), [8209, 8209, 8209, 6000, 1812, 1811]
   end
 end
