@@ -1,8 +1,10 @@
 module FunboxTest
   module Numbers
+    MAX_NUMBER_LENGTH = 1000
+
     def self.parse_numbers(text)
       numbers = []
-      while pass = text.read(1000000)
+      while pass = text.read(1000)
         @begining = pass.match(/^\d+/).to_s
         if @begining != ''
           pass = pass[@begining.size..-1]

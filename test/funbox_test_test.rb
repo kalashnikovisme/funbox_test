@@ -6,6 +6,6 @@ class FunboxTestTest < Minitest::Test
   end
 
   def test_nmax
-    assert_equal ::FunboxTest.nmax(6), [8209, 8209, 8209, 6000, 1812, 1811]
+    assert_equal ::FunboxTest.nmax(File.open('./war_and_peace.txt'), 6), [8209, 8209, 8209, 6000, 1812, 1811]
   end
 end
